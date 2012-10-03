@@ -1,0 +1,88 @@
+@font-face
+{
+	font-family: "Nunito";
+	src: url("Nunito-Regular.ttf");
+}
+article, footer, form, header, section
+{
+	background: white;
+	display: block;
+	text-align: center;
+}
+body
+{
+	background: url('imagenes/background3.jpg');
+	display: inline-block;
+	font-family: "Nunito";
+	font-size: 16px;
+	width: 100%;
+}
+footer, header, section
+{
+	border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.8) 0px 4px 10px;
+	margin: 1em auto;
+	padding: 1em;
+	width: 90%;
+}
+form
+{
+	border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.8) 0px 4px 10px;
+	margin: 1em auto;
+	padding: 1em;
+}
+header
+{
+	background: url("imagenes/Avatar.png") no-repeat 30% center, 
+				url("imagenes/background2.jpg");
+	
+	text-align: center;
+	
+}
+header h1
+{
+	color: white;
+	text-shadow: rgba(255,255,255,0.7) 2px 2px 10px;
+	transition: all 1s linear;
+}
+footer
+{
+	text-align: right;
+}
+.inputForm
+{
+	margin: 0.8em 0 0.8em 0;
+	padding: 0.4em 0.6em 0.4em 0.6em;
+	width: 35%;
+}
+.labelForm
+{
+	float: left; 
+	clear: right;
+	margin: 0.4em 1.2em 0.4em 0;
+	text-align: right;    
+	width: 35%;
+}
+#conversiones
+{
+	width: 39em;
+}
+#Operaciones
+{
+	width: 25em;
+}
+#frmOperaciones input[type="text"], #frmPaR input[type="text"]
+{
+	width: 6em;
+}
+#frmRaP, #frmPaR
+{
+	display: inline-block;
+	margin: 1em;
+	width: 15em;
+}
+#frmRaP input[type="text"], #tblMatriz input[type="text"]
+{
+	width: 2em;
+}

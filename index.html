@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ctos</title>
+	<meta charset="utf-8" />
+	
+	<script src="Tools/HTML5/HTML5_enabling_script.js"></script>
+	<script src="Tools/HTML5/prefixfree.min.js"></script>
+	<script src="Tools/HTML5/jquery.js"></script>
+	<script src="Tools/HTML5/jquery-ui.js"></script>
+	
+	<script src="funciones.js"></script>
+	
+	<link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/estilos.css" rel="stylesheet">
+    
+	
+</head>
+
+<body>
+	<header>
+		<h1>Primer Parcial Ctos</h1>
+	</header>
+<!--
+	<form>
+		<h2>Reactancias</h2>
+		<select id="cboReactancia">
+			<option value ="Bobina">Bobina</option>
+			<option value ="Condensador">Condensador</option>
+			<option value ="Resistencia">Resitencia</option>
+		</select>
+		<label>Valor</label><input type='text' id='txtReactanciaValor' />
+			<select id="cboReactanciaUnidades">
+				<option value ="Herz">Herz</option>
+				<option value ="Faradios">Faradios</option>
+				<option value ="Ohmios">Ohmios</option>
+			</select>
+		<label>Frecuencia</label><input type='text' id='txtReactanciaFrecuencia' />
+	</form>
+-->
+<section id='conversiones'>
+	<h2>Conversiones</h2>
+	<form id='frmRaP'>
+		<h2>Rectangular a Polar</h2>
+		<label>Valor a Convertir:</label>
+		</br>
+		<input type='text' id='txtRaPValorA' />
+			<select id="cboRaPSigno">
+				<option value ="2">+</option>
+				<option value ="1">-</option>
+			</select>
+			<label>j </label><input type='text' id='txtRaPValorB' />
+		</br>
+		<input type='submit' class='ui-button-success ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' value='Convertir'/>
+		</br>
+		<article id='RaPResultado'></article>
+	</form>
+	<form id='frmPaR'>
+		<h2>Polar a Rectangular</h2>
+		<label>Valor a Convertir:</label>
+		</br>
+		<input type='text' id='txtPaRValor' />
+		<label>|_</label>
+		<input type='text' id='txtPaRAngulo' />
+		</br>
+		<input type='submit' class='ui-button-success ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' value='Convertir'/>
+		</br>
+		<article id='PaRResultado'></article>
+	</form>
+</section>
+<section id='Operaciones'> 
+	<h2>Operaciones</h2>
+		<form id='frmOperaciones'>
+				<label>Z1 = </label>
+			<input type='text' id='txtA1' />
+			<input type='text' id='txtB1' />j
+			</br>
+				<label>Z2 = </label>
+			<input type='text' id='txtA2' />
+			<input type='text' id='txtB2' />j
+			</br>		
+				<input type='submit' class='ui-button-success ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' value='Operar'/>
+			</br>
+				<label>Z1 + Z2 = </label>
+			<input type='text' id='txtSumaA' />
+			<input type='text' id='txtSumaB' />
+			</br>
+				<label>Z1 - Z2 = </label>
+			<input type='text' id='txtRestaA' />
+			<input type='text' id='txtRestaB' />
+			</br>
+				<label>Z1 * Z2 = </label>
+			<input type='text' id='txtMultiplicacionA' />
+			<input type='text' id='txtMultiplicacionB' />
+			</br>
+				<label>Z1 / Z2 = </label>
+			<input type='text' id='txtDivisionA' />
+			<input type='text' id='txtDivisionB' />
+			</br>
+
+		</form>
+
+</section>
+<section>
+	<a href='http://www.resolvermatrices.com.ar/'>Matrices</a>
+</section>
+<!--
+<section id='matrices'> 
+	<h2>Matrices</h2>
+			<label>Tamaño de la Matriz</label>
+			<article id='mao'></article>
+			</br>
+			<input type='text' id='txtMatrizM' />
+			<label> x </label>
+			<input type='text' id='txtMatrizN' />
+			
+				<button id='btnMatrizMostrar' class='ui-button-success ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only'>Mostrar</button>
+			</br>	
+			<table id='tblMatriz'>
+			<button id='btnMatrizCalcular' class='ui-button-success ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only'>Calcular</button>
+			</table>
+</section>
+-->
+</body>
+
+</html>
